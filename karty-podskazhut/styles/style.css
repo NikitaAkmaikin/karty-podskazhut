@@ -1,12 +1,15 @@
+:root {
+  --bg-color: #F3EFEC;;
+  --text-color:#312A4E;
+  --accent-color: #FFAB6B;;
+  --main-font: "STIX Two Text";
+  --accent-font: "Raleway";
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-.page {
-  min-inline-size: 360px;
-  margin: 0;
 }
 
 p,
@@ -19,4 +22,146 @@ ol,
 li,
 figure {
   margin: 0;
+}
+
+section {
+  margin: 91px 0;
+}
+
+/* General */
+
+.content-section {
+  padding: 0 5vw;
+}
+
+.title {
+  margin-bottom: 32px;
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 90%;
+  text-align: center;
+}
+
+.content {
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.content span {
+  color: var(--text-color);
+  font-family: var(--accent-font);
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 9px;
+  background: var(--accent-color);
+}
+
+.page {
+  margin: 0;
+  color: #312A4E;
+  background: var(--bg-color);
+  min-inline-size: 360px;
+}
+
+.theme_dark {
+
+}
+
+.header {
+  margin-top: 144px;
+}
+
+.header__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+  padding: 20px 5vw;
+}
+
+.logo {
+  
+}
+
+.header__menu ul{
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+
+.light {
+
+}
+
+.dark {
+
+}
+
+/* section / creative-problem */
+
+.creative-problem {
+
+}
+
+.content__box {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+/* section / what-of-deck */
+
+.what-of-deck {
+
+}
+
+.description_foto {
+
+}
+
+/* section / workaround-strategies */
+
+.workaround-strategies {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.idea__box {
+  border: 1px solid var(--text-color);
+  width: clamp(320px, 90vw, 1300px);
+  height: calc(85vw / 1.3);
+}
+
+.idea__box-title {
+
+}
+
+/* section / oblique-strategies */
+
+.oblique-strategies {
+
+}
+
+/* footer */
+
+.footer {
+
+}
+
+.footer__line {
+  
 }
